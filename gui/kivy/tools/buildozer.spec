@@ -10,7 +10,7 @@ package.name = Electrum
 package.domain = org.electrum
 
 # (str) Source code where the main.py live
-source.dir = .
+source.dir = /home/eddrickliu/swag/electrum/main.py
 
 # (list) Source files to include (let empty to include all the files)
 source.include_exts = py,png,jpg,kv,atlas,ttf,txt,gif,pem,mo,vs,fs,json
@@ -24,11 +24,11 @@ source.exclude_dirs = bin, build, dist, contrib, gui/qt, gui/kivy/tools, gui/kiv
 source.exclude_patterns = Makefile,setup*
 
 # (str) Application versioning (method 1)
-version.regex = version_apk = '(.*)'
-version.filename = %(source.dir)s/contrib/versions.py
+#version.regex = version_apk = '(.*)'
+#version.filename = %(source.dir)s/contrib/versions.py
 
 # (str) Application versioning (method 2)
-#version = 1.9.8
+version = 1.9.8
 
 # (list) Application requirements
 requirements = hostpython2, android, openssl, pycrypto, pil, plyer, kivy==master
@@ -55,13 +55,13 @@ fullscreen = False
 # (list) Permissions
 android.permissions = INTERNET, WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE
 # (int) Android API to use
-#android.api = 14
+#android.api = 24
 
 # (int) Minimum API required (8 = Android 2.2 devices)
 #android.minapi = 8
 
 # (int) Android SDK version to use
-#android.sdk = 21
+#android.sdk = 24
 
 # (str) Android NDK version to use
 #android.ndk = 9
@@ -120,7 +120,7 @@ android.manifest.intent_filters = gui/kivy/tools/bitcoin_intent.xml
 android.whitelist = lib-dynload/_csv.so
 
 # local version that merges branch 866
-p4a.source_dir = /opt/python-for-android
+p4a.source_dir = /home/eddrickliu/.local/lib/python2.7/site-packages/pythonforandroid/
 
 #
 # iOS specific
